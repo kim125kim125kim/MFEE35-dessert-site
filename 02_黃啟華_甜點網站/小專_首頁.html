@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小專_首頁</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script defer src="./小專.js"></script>
+
+    <style>
+        @import url("./小專.css");
+        @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;1,300&family=Noto+Serif+TC:wght@700&display=swap');
+    </style>
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo"><a href="./小專_首頁.html"><img src="./圖片/logo去背.png" alt="logo"></a></div>
+        <div class="menu">
+            <ul>
+                <li class="about">
+                    <a href="./小專_關於我們.html">關於我們</a>
+                </li>
+                <li class="event"> <a href="./小專_活動公告.html">商品QA</a></li>
+                <li class="commodity"> <a href="小專_系列商品.html">系列商品</a></li>
+                <div class="m.hover1"></div>
+                <div class="m.hover2"></div>
+                <div class="m.hover3"></div>
+                <div class="m.hover4"></div>
+            </ul>
+
+        </div>
+        <div class="icon">
+            <ul>
+                <li><a href="./小專_會員.html"><img class="user" src="./圖片/會員.png" alt="會員icon"></a></li>
+                <li><img onclick="working()" class="shop_car" src="./圖片/購物車.png" alt="購物車icon"></li>
+                <li><img onclick="search_bar()" class="search" src="./圖片/搜尋.png" alt="搜尋icon"></li>
+            </ul>
+
+            <form class="search_bar" style="visibility: hidden;">
+                <li class="search_hidden" style="position: absolute; right: 200px;">
+
+                    <input type="text" name="search"
+                        style=" position: absolute; right: -150px; top: 10px;background-color: #F7C242; height: 25px; width: 150px; border: 1px  #FFB11B solid; border-radius: 10px;">
+
+                    <input type="submit" value="搜尋"
+                        style="position: absolute; right: -195px; top: 10px; border: #FFB11B 1px solid; border-radius: 10px; height: 25px; background-color: #d49c33; color: #000000;"></input>
+            </form>
+
+
+
+
+
+        </div>
+
+
+    </header>
+    <hr>
+    <div class="slideshow-container">
+        <div>
+            <img src="./圖片/情人節.jpg" style="width:100%">
+        </div>
+
+        <div>
+            <img src="./圖片/布丁節.jpg" style="width:100%">
+        </div>
+
+        <div>
+            <img src="./圖片/巧克力蛋糕.jpg" style="width:100%">
+
+        </div>
+        <div>*鼠標停在圖片上可暫停輪播</div>
+
+
+    </div>
+    <br>
+
+
+
+    <div>
+        <div style="font-size: 40px;text-align: center;">
+            <br>
+            <br>
+
+            系列商品
+            <div style="background-color: #8F77B5 ;width: 200px; height: 5px; margin-left:44.8%;"></div>
+
+        </div>
+        <div class="series goodsgoods">
+            <ul class="goodsgoods row">
+                <li class="cake">
+                    <img style="  width: 400px;" src="./圖片/布朗尼.jpg" alt="蛋糕示意圖">
+                    <div class="cake.hover" style="color: white;">來點甜甜</div>
+                    <br>
+                    <p style="text-align: center;font-size: 28px;">蛋糕</p>
+                </li>
+                <li class="bread">
+                    <img style="  width: 400px;" src="./圖片/麵包.jpg" alt="麵包示意圖">
+                    <div class="bread.hover">有點肚餓</div>
+                    <br>
+                    <p style="text-align: center; font-size: 28px;">麵包</p>
+                </li>
+                <li class="dessert">
+                    <img style="  width: 400px;" src="./圖片/甜點.jpg" alt="甜點示意圖">
+                    <div class="dessert.hover" style="color: white;">我嘴饞了</div>
+                    <br>
+                    <p style="text-align: center;font-size: 28px;">甜點</p>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+
+    <div class="viedo">
+        <div style="font-size: 40px;text-align: center;">
+            <br>
+            <br>
+            <br>
+            推薦影片/頻道
+            <div style="background-color: #8F77B5 ;width: 300px; height: 5px; margin-left:42%;"></div>
+
+        </div>
+        <div class="series">
+            <ul>
+                <li class="cheese_cake">
+                    <iframe width="500" height="300" src="https://www.youtube.com/embed/ELnts-e1bp0?start=0"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    <p style="font-size: 28px;">糖餃子-巴斯克起司蛋糕</p>
+                </li>
+                <li class="skon">
+                    <iframe width="500" height="300" src="https://www.youtube.com/embed/CV6d6kSW1MM?start=0"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    <p style="font-size: 28px;">厭世甜點店-草莓司康</p>
+
+                </li>
+                <li class="toast">
+                    <iframe width="500" height="300" src="https://www.youtube.com/embed/yEsFv3fwInA?start=0"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    <p style="font-size: 28px;">巧兒灶咖-法式吐司</p>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+    <footer>
+       
+        <ul class="footer">
+            <li><img style="height: 40px;" class="facebook" src="./圖片/facebook logo.png" alt="搜尋icon"></li>
+            <li><img style="height: 40px;;" class="instagram" src="./圖片/instagram logo_icon.png" alt="會員icon"></li>
+            <li><img style="height: 40px;;" class="line_icon" src="./圖片/line_icon.png" alt="購物車icon"></li>
+            <li><img style="height: 40px;;" class="phone_icon" src="./圖片/phone_icon.png" alt="購物車icon"></li>
+        </ul>
+        <ul class="footer_text">
+            <li>menkeki</li>
+            <li style="position: absolute;bottom: 38px;">menkeki</li>
+            <li style="position: absolute;bottom: -26px;">men_ke_ki_dessert</li>
+            <li style="position: absolute;bottom: -90px; width: 200px;">0900-333-999</li>
+        </ul>
+        
+    </footer>>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+
+</html>

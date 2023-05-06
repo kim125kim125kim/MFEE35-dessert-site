@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小專_系列商品</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script defer src="./小專.js"></script>
+
+    <style>
+        @import url("./小專.css");
+        @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;1,300&family=Noto+Serif+TC:wght@700&display=swap');
+    </style>
+
+    <style>
+        body {
+            height: 1000px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo"><a href="./小專_首頁.html"><img src="./圖片/logo去背.png" alt="logo"></a></div>
+        <div class="menu">
+            <ul>
+                <li class="about">
+                    <a href="./小專_關於我們.html">關於我們</a>
+                </li>
+                <li class="event"> <a href="./小專_活動公告.html">商品QA</a></li>
+                <li class="commodity"> <a href="小專_系列商品.html">系列商品</a></li>
+                <div class="m.hover1"></div>
+                <div class="m.hover2"></div>
+                <div class="m.hover3"></div>
+                <div class="m.hover4"></div>
+            </ul>
+
+        </div>
+        <div class="icon">
+            <ul>
+                <li><a href="./小專_會員.html"><img class="user" src="./圖片/會員.png" alt="會員icon"></a></li>
+
+                <li><img onclick="working()" class="shop_car" src="./圖片/購物車.png" alt="購物車icon"></li>
+
+                <li><img onclick="search_bar()" class="search" src="./圖片/搜尋.png" alt="搜尋icon"></li>
+            </ul>
+
+            <form class="search_bar" style="visibility: hidden;">
+                <li class="search_hidden" style="position: absolute; right: 200px;">
+
+                    <input type="text" name="search"
+                        style=" position: absolute; right: -150px; top: 10px;background-color: #F7C242; height: 25px; width: 150px; border: 1px  #FFB11B solid; border-radius: 10px;">
+
+                    <input type="submit" value="搜尋"
+                        style="position: absolute; right: -195px; top: 10px; border: #FFB11B 1px solid; border-radius: 10px; height: 25px; background-color: #d49c33; color: #000000;"></input>
+            </form>
+
+
+
+
+
+        </div>
+
+
+    </header>
+
+    <div style="font-size: 40px;text-align: center;">
+        <br>
+        系列商品
+        <div id="myBtnContainer">
+            <button class="btn" onclick="filterSelection('all')"> 全部商品</button>
+            <button class="btn" onclick="filterSelection('cakes')"> 蛋糕</button>
+            <button class="btn" onclick="filterSelection('bread')"> 麵包</button>
+            <button class="btn" onclick="filterSelection('sweets')"> 甜點</button>
+        </div>
+    </div>
+
+    <div id="goodsgoods" style="overflow: hidden;">
+        <ul class="goodsgoods row text-wh">
+            <li class="filterDiv cakes">
+                <div class="card_goods">
+                    <div>
+                        <img style="width: 320px; " src="./圖片/巧克力蛋糕.jpg">
+                        <div style="text-align: center; color: #000000; font-size: 16px; margin-top: 10px;">巧克力蛋糕</div>
+                        <div style="text-align: center; color: #000000; font-size: 22px;margin-top: 10px;">280 NT.</div>
+                        <button class="shopping_car">加入購物車</button>
+                    </div>
+
+                </div>
+            </li>
+
+            <li class="filterDiv cakes">
+                <div class="card_goods">
+                    <div>
+                        <img style="width: 320px;" src="./圖片/櫻桃蛋糕.jpg">
+                        <div style="text-align: center; color: #000000; font-size: 16px; margin-top: 10px;">櫻桃蛋糕</div>
+                        <div style="text-align: center; color: #000000; font-size: 22px;margin-top: 10px;">500 NT.</div>
+                        <button class="shopping_car">加入購物車</button>
+                    </div>
+                </div>
+            </li>
+
+            <li class="filterDiv cakes">
+                <div style="margin-right: 0;" class="card_goods">
+                    <div>
+                        <img style="width: 320px;" src="./圖片/鮮奶油蛋糕.jpg">
+                        <div style="text-align: center; color: #000000; font-size: 16px; margin-top: 10px;">鮮奶油蛋糕</div>
+                        <div style="text-align: center; color: #000000; font-size: 22px;margin-top: 10px;">200 NT.</div>
+                        <button class="shopping_car">加入購物車</button>
+                    </div>
+                </div>
+            </li>
+            <li class="filterDiv cakes">
+                <div class="card_goods">
+                    <div>
+                        <img style="width: 320px; height: 215px; " src="./圖片/莓果蛋糕.jpg">
+                        <div style="text-align: center; color: #000000; font-size: 16px; margin-top: 10px;">莓果蛋糕</div>
+                        <div style="text-align: center; color: #000000; font-size: 22px;margin-top: 10px;">300 NT.</div>
+                        <button class="shopping_car">加入購物車</button>
+                    </div>
+
+                </div>
+            </li>
+            <li class="filterDiv cakes">
+                <div class="card_goods">
+                    <div>
+                        <img style="width: 320px; " src="./圖片/杯子蛋糕.jpg">
+                        <div style="text-align: center; color: #000000; font-size: 16px; margin-top: 10px;">杯子蛋糕</div>
+                        <div style="text-align: center; color: #000000; font-size: 22px;margin-top: 10px;">45 NT. / 個</div>
+                        <button class="shopping_car">加入購物車</button>
+                    </div>
+
+                </div>
+            </li>
+            <li class="filterDiv cakes">
+                <div class="card_goods">
+                    <div>
+                        <img style="width: 320px; " src="./圖片/黑森林蛋糕.jpg">
+                        <div style="text-align: center; color: #000000; font-size: 16px; margin-top: 10px;">黑森林蛋糕</div>
+                        <div style="text-align: center; color: #000000; font-size: 22px;margin-top: 10px;">560 NT.</div>
+                        <button class="shopping_car">加入購物車</button>
+                    </div>
+
+                </div>
+            </li>
+            <li class="filterDiv bread">
+                <div class="card_goods">
+                    <div>
+                        <img style="width: 320px;" src="./圖片/波羅麵包.jpg">
+                        <div style="text-align: center; color: #000000; font-size: 16px; margin-top: 10px;">波羅麵包</div>
+                        <div style="text-align: center; color: #000000; font-size: 22px;margin-top: 10px;">30 NT. / 個</div>
+                        <button class="shopping_car">加入購物車</button>
+
+
+                        
+                    </div>
+                </div>
+            </li>
+            <li class="filterDiv bread">
+                <div style="margin-right: 0;" class="card_goods">
+                    <div>
+                        <img style="width: 320px;" src="./圖片/雜糧麵包.jpg">
+                        <div style="text-align: center; color: #000000; font-size: 16px; margin-top: 10px;">雜糧麵包</div>
+                        <div style="text-align: center; color: #000000; font-size: 22px;margin-top: 10px;">60 NT. / 個</div>
+                        <button class="shopping_car">加入購物車</button>
+
+                    </div>
+                </div>
+            </li>
+            <li class="filterDiv bread">
+                <div style="margin-right: 0;" class="card_goods">
+                    <div>
+                        <img style="width: 320px;" src="./圖片/圖案麵包.jpg">
+                        <div style="text-align: center; color: #000000; font-size: 16px; margin-top: 10px;">動物圖案麵包</div>
+                        <div style="text-align: center; color: #000000; font-size: 22px;margin-top: 10px;">70 NT. / 個</div>
+                        <button class="shopping_car">加入購物車</button>
+
+                        
+                    </div>
+                </div>
+            </li>
+            <li class="filterDiv sweets">
+                <div style="margin-right: 0;" class="card_goods">
+                    <div>
+                        <img style="width: 320px;" src="./圖片/水果軟糖.jpg">
+                        <div style="text-align: center; color: #000000; font-size: 16px; margin-top: 10px;">水果軟糖</div>
+                        <div style="text-align: center; color: #000000; font-size: 22px;margin-top: 10px;">100 NT. / 百克</div>
+                        <button class="shopping_car">加入購物車</button>
+                    </div>
+                </div>
+            </li>
+            <li class="filterDiv sweets">
+                <div style="margin-right: 0;" class="card_goods">
+                    <div>
+                        <img style="width: 320px;" src="./圖片/小熊軟糖.jpg">
+                        <div style="text-align: center; color: #000000; font-size: 16px; margin-top: 10px;">小熊軟糖</div>
+                        <div style="text-align: center; color: #000000; font-size: 22px;margin-top: 10px;">60 NT. / 百克</div>
+                        <button class="shopping_car" >加入購物車</button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
+    <footer style="position: absolute; width: 100%; top:2000px;">
+        <ul class="footer">
+            <li><img style="height: 40px;" class="facebook" src="./圖片/facebook logo.png" alt="搜尋icon"></li>
+            <li><img style="height: 40px;;" class="instagram" src="./圖片/instagram logo_icon.png" alt="會員icon"></li>
+            <li><img style="height: 40px;;" class="line_icon" src="./圖片/line_icon.png" alt="購物車icon"></li>
+            <li><img style="height: 40px;;" class="phone_icon" src="./圖片/phone_icon.png" alt="購物車icon"></li>
+        </ul>
+        <ul class="footer_text">
+            <li>menkeki</li>
+            <li style="position: absolute;bottom: 38px;">menkeki</li>
+            <li style="position: absolute;bottom: -26px;">men_ke_ki_dessert</li>
+            <li style="position: absolute;bottom: -90px; width: 200px;">0900-333-999</li>
+        </ul>
+        <div style="color: #452652; font-size: 20px; position: absolute;left: 1500px; bottom: 10px;">Copyright © but All
+            Rights Reserved​​</div>
+    </footer>
+
+</body>
+
+</html>
